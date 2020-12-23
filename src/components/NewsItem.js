@@ -13,7 +13,9 @@ const NewsItem = ({ newItem }) => {
 				<div className="sub-content">
 					<div className="text">
 						<p>{newItem.description}</p>
-						<button className="ui inverted black button">Read More</button>
+						<a href={newItem.url}  target="_blank">
+							<button className="ui inverted black button">Read More</button>
+						</a>
 					</div>
 					<div className="image">
 						<img 
